@@ -1,4 +1,3 @@
-
 class BankAccount:
     """
     A class to represent a bank account.
@@ -25,7 +24,7 @@ class BankAccount:
         """
         if amount > 0:
             self.__account_balance += amount
-            print(f"Deposited: ${amount}")
+            print(f"Deposited: ${amount:.2f}")
         else:
             print("Invalid deposit amount. Amount must be positive.")
 
@@ -41,7 +40,7 @@ class BankAccount:
         """
         if amount > 0 and amount <= self.__account_balance:
             self.__account_balance -= amount
-            print(f"Withdrew: ${amount}")
+            print(f"Withdrew: ${amount:.2f}")
             return True
         elif amount <= 0:
             print("Invalid withdrawal amount. Amount must be positive.")
@@ -53,7 +52,7 @@ class BankAccount:
         """
         Prints the current account balance.
         """
-        print(f"Current Balance: ${self.__account_balance}")
+        print(f"Current Balance: ${self.__account_balance:.2f}")
 
 if __name__ == "__main__":
     # Example usage of the BankAccount class
