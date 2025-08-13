@@ -52,7 +52,7 @@ class TestSimpleCalculator(unittest.TestCase):
         # large numbers
         self.assertEqual(self.calc.multiply(10**6, 10**6), 10**12)
 
-    def test_divide(self):
+    def test_division(self):
         # normal division
         self.assertEqual(self.calc.divide(10, 5), 2.0)
         self.assertEqual(self.calc.divide(-10, 5), -2.0)
