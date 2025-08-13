@@ -1,5 +1,4 @@
 
-
 class BankAccount:
     """
     A class to represent a bank account.
